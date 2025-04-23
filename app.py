@@ -9,9 +9,9 @@ api_key = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 
 # Page setup
-st.set_page_config(page_title="Healthy Lifestyle Buddy", page_icon="🍏", layout="centered")
-st.title("🍏 Your Healthy Lifestyle Buddy")
-st.subheader("AI Meal, Fitness & Wellness Chatbot")
+st.set_page_config(page_title="FitFusion AI", page_icon="🍏", layout="centered")
+st.title("🍏 FitFusion AI")
+st.subheader(" Meal, Fitness & Wellness Chatbot")
 
 # Welcome screen if no category is chosen yet
 if "category" not in st.session_state:
