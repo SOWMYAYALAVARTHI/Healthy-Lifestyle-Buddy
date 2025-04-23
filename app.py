@@ -9,13 +9,13 @@ api_key = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 
 # Page setup
-st.set_page_config(page_title="FitFusion AI", page_icon="🍏", layout="centered")
-st.title("🍏 FitFusion AI")
+st.set_page_config(page_title="FitFusion AI", page_icon="🥗🏋️🌿", layout="centered")
+st.title("🥗 FitFusion AI 🏋️🌿")
 st.subheader(" Meal, Fitness & Wellness Chatbot")
 
 # Welcome screen if no category is chosen yet
 if "category" not in st.session_state:
-    st.markdown("### 👋 Welcome to Your Healthy Lifestyle Buddy!")
+    st.markdown("### 👋 Welcome to FitFusion - Your Healthy Lifestyle Buddy!")
     st.markdown("I'm your all-in-one assistant for:")
     st.markdown("- 🥗 Healthy Meals\n- 🏋️ Quick Workouts\n- 🧘 Mindfulness Tips")
     st.markdown("Choose what you'd like to start with:")
@@ -23,16 +23,17 @@ if "category" not in st.session_state:
     col1, col2, col3 = st.columns(3)
     with col1:
         if st.button("🍽️ Meals"):
-            st.session_state.category = "Quick Healthy Meal"
-            st.rerun()
+         st.session_state.category = "Quick Healthy Meal"
+         st.rerun()
     with col2:
         if st.button("💪 Workouts"):
-            st.session_state.category = "Short Workout Plan"
-            st.rerun()
+         st.session_state.category = "Short Workout Plan"
+         st.rerun()
     with col3:
         if st.button("🧘 Wellness"):
             st.session_state.category = "Wellness & Mindfulness Tip"
             st.rerun()
+        
     st.stop()
 
 # Initialize chat history
