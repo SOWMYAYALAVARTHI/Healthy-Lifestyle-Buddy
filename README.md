@@ -2,7 +2,7 @@
 
 Your AI-powered health companion that helps you eat better, move smarter, and live calmer — powered by Google's Gemini API & Streamlit!
 
-![App Preview](https://source.unsplash.com/1200x300/?healthy,lifestyle)
+
 
 ---
 
